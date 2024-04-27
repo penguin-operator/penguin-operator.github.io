@@ -1,0 +1,98 @@
+:root {
+    --black: #000;
+    --red: #f00;
+    --green: #0f0;
+    --blue: #00f;
+    --yellow: #ff0;
+    --magenta: #f0f;
+    --cyan: #0ff;
+    --white: #fff;
+    --none: #0000;
+    --select: #fff7;
+}
+html, body, * {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Fira Code";
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+
+    background-color: var(--black);
+    color: var(--white);
+
+    text-decoration: none;
+    filter: none;
+    animation: none;
+}
+html::selection, body::selection, *::selection {
+    background-color: var(--select);
+}
+
+.black { color: var(--black); }
+.red { color: var(--red); }
+.green { color: var(--green); }
+.blue { color: var(--blue); }
+.yellow { color: var(--yellow); }
+.magenta { color: var(--magenta); }
+.cyan { color: var(--cyan); }
+.white { color: var(--white); }
+
+.on-black { background-color: var(--black); }
+.on-red { background-color: var(--red); }
+.on-green { background-color: var(--green); }
+.on-blue { background-color: var(--blue); }
+.on-yellow { background-color: var(--yellow); }
+.on-magenta { background-color: var(--magenta); }
+.on-cyan { background-color: var(--cyan); }
+.on-white { background-color: var(--white); }
+
+.sgr0 { font-weight: 300; font-style: normal; text-decoration: none; filter: none; animation: none;}
+.bold { font-weight: 700; }
+.dim { font-weight: 100; }
+.sitm { font-style: italic; }
+.smul { text-decoration: underline; }
+.blink { animation: blink .8s step-start infinite; }
+.rev { filter: invert(100%); }
+.smxx { text-decoration: line-through; }
+
+@keyframes blink {
+    50% {
+        color: var(--none);
+        ::selection {
+            color: var(--none);
+        }
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3ch;
+    padding: 1ch;
+    outline: 1px solid var(--white);
+    >a { color: var(--cyan); }
+    >div {
+        display: flex;
+        align-items: center;
+        margin-right: -1ch;
+        >a { margin: 0 1ch; }
+        >#blog { color: var(--yellow); }
+        >#projects { color: var(--green); }
+        >#github { color: var(--blue); }
+        >#youtube { color: var(--red); }
+        >#about { color: var(--magenta); }
+    }
+}
+a {
+    color: var(--green);
+}
+a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 1ch;
+    display: flex;
+}
