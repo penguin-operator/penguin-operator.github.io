@@ -14,7 +14,7 @@ html, body, * {
     margin: 0;
     padding: 0;
 
-    font-family: "Fira Code";
+    font-family: "Hack";
     font-size: 20px;
     font-weight: 300;
     font-style: normal;
@@ -74,6 +74,38 @@ header {
     padding: 1ch;
     outline: 1px solid var(--white);
     >a { color: var(--cyan); }
+    >form {
+        display: flex;
+        >* {
+            border: none;
+        }
+        >input {
+            width: 38ch;
+            background-color: var(--black);
+            color: var(--white);
+            outline: none;
+            text-decoration: underline;
+        }
+        >input::placeholder {
+            opacity: 1;
+            color: var(--green);
+            text-decoration: none;
+        }
+        >button {
+            background-color: var(--blue);
+            color: ver(--white);
+            width: 2ch;
+            
+        }
+        >button:hover {
+            background-color: var(--cyan);
+            color: var(--black)
+        }
+        >button:active {
+            background-color: var(--green);
+            color: var(--black)
+        }
+    }
     >div {
         display: flex;
         align-items: center;
@@ -86,13 +118,14 @@ header {
         >#about { color: var(--magenta); }
     }
 }
+main {
+    padding: 1ch;
+    display: flex;
+}
+
 a {
     color: var(--green);
 }
 a:hover {
     text-decoration: underline;
-}
-main {
-    padding: 1ch;
-    display: flex;
 }

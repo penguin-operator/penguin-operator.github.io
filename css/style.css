@@ -1,1 +1,8 @@
 @import url(css/lib.css);
+
+img {
+    width: 20ch;
+    border-radius: 10ch;
+    border: 1px solid var(--white);
+    margin-right: 1ch;
+}
