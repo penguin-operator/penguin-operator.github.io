@@ -1,8 +1,17 @@
 @import url(css/lib.css);
 
+main {
+    padding-top: 4ch;
+}
+
 img {
     width: 20ch;
+    height: 20ch;
     border-radius: 10ch;
     outline: 1px solid var(--white);
     margin-right: 1ch;
+    margin-left: 16ch;
+}
+p {
+    margin-right: 16ch;
 }

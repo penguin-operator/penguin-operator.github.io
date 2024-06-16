@@ -1,16 +1,19 @@
 :root {
-    --black: #000;
-    --red: #f00;
-    --green: #0f0;
-    --blue: #00f;
-    --yellow: #ff0;
-    --magenta: #f0f;
-    --cyan: #0ff;
-    --white: #fff;
+    --black: #001;
+    --red: #f01;
+    --green: #1f0;
+    --blue: #01f;
+    --yellow: #fe0;
+    --magenta: #e0f;
+    --cyan: #0fe;
+    --white: #ffe;
     --none: #0000;
-    --select: #fff7;
+    --select: #ffe7;
 }
-html, body, * {
+
+html,
+body,
+* {
     margin: 0;
     padding: 0;
 
@@ -26,40 +29,117 @@ html, body, * {
     filter: none;
     animation: none;
 }
-html::selection, body::selection, *::selection {
+
+html::selection,
+body::selection,
+*::selection {
     background-color: var(--select);
 }
 
-.black { color: var(--black); }
-.red { color: var(--red); }
-.green { color: var(--green); }
-.blue { color: var(--blue); }
-.yellow { color: var(--yellow); }
-.magenta { color: var(--magenta); }
-.cyan { color: var(--cyan); }
-.white { color: var(--white); }
+.black {
+    color: var(--black);
+}
 
-.on-black { background-color: var(--black); }
-.on-red { background-color: var(--red); }
-.on-green { background-color: var(--green); }
-.on-blue { background-color: var(--blue); }
-.on-yellow { background-color: var(--yellow); }
-.on-magenta { background-color: var(--magenta); }
-.on-cyan { background-color: var(--cyan); }
-.on-white { background-color: var(--white); }
+.red {
+    color: var(--red);
+}
 
-.sgr0 { font-weight: 300; font-style: normal; text-decoration: none; filter: none; animation: none;}
-.bold { font-weight: 700; }
-.dim { font-weight: 100; }
-.sitm { font-style: italic; }
-.smul { text-decoration: underline; }
-.blink { animation: blink .8s step-start infinite; }
-.rev { filter: invert(100%); }
-.smxx { text-decoration: line-through; }
+.green {
+    color: var(--green);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+.magenta {
+    color: var(--magenta);
+}
+
+.cyan {
+    color: var(--cyan);
+}
+
+.white {
+    color: var(--white);
+}
+
+.on-black {
+    background-color: var(--black);
+}
+
+.on-red {
+    background-color: var(--red);
+}
+
+.on-green {
+    background-color: var(--green);
+}
+
+.on-blue {
+    background-color: var(--blue);
+}
+
+.on-yellow {
+    background-color: var(--yellow);
+}
+
+.on-magenta {
+    background-color: var(--magenta);
+}
+
+.on-cyan {
+    background-color: var(--cyan);
+}
+
+.on-white {
+    background-color: var(--white);
+}
+
+.sgr0 {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    filter: none;
+    animation: none;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.dim {
+    font-weight: 100;
+}
+
+.sitm {
+    font-style: italic;
+}
+
+.smul {
+    text-decoration: underline;
+}
+
+.blink {
+    animation: blink .8s step-start infinite;
+}
+
+.rev {
+    filter: invert(100%);
+}
+
+.smxx {
+    text-decoration: line-through;
+}
 
 @keyframes blink {
     50% {
         color: var(--none);
+
         ::selection {
             color: var(--none);
         }
@@ -73,12 +153,18 @@ header {
     height: 3ch;
     padding: 1ch;
     outline: 1px solid var(--white);
-    >a { color: var(--cyan); }
+
+    >a {
+        color: var(--cyan);
+    }
+
     >form {
         display: flex;
+
         >* {
             border: none;
         }
+
         >input {
             width: 38ch;
             background-color: var(--black);
@@ -86,37 +172,58 @@ header {
             outline: none;
             text-decoration: underline;
         }
+
         >input::placeholder {
             opacity: 1;
-            color: var(--green);
+            color: var(--magenta);
             text-decoration: none;
         }
+
         >button {
             background-color: var(--blue);
             color: ver(--white);
             width: 2ch;
-            
+
         }
+
         >button:hover {
             background-color: var(--cyan);
             color: var(--black)
         }
+
         >button:active {
             background-color: var(--green);
             color: var(--black)
         }
     }
+
     >div {
         display: flex;
         align-items: center;
         margin-right: -1ch;
-        >a { margin: 0 1ch; }
-        >#posts { color: var(--yellow); }
-        >#projects { color: var(--magenta); }
-        >#github { color: var(--blue); }
-        >#youtube { color: var(--red); }
+
+        >a {
+            margin: 0 1ch;
+        }
+
+        >#posts {
+            color: var(--green);
+        }
+
+        >#projects {
+            color: var(--yellow);
+        }
+
+        >#github {
+            color: var(--blue);
+        }
+
+        >#youtube {
+            color: var(--red);
+        }
     }
 }
+
 main {
     padding: 1ch;
     display: flex;
@@ -125,6 +232,7 @@ main {
 a {
     color: var(--green);
 }
+
 a:hover {
     text-decoration: underline;
 }
