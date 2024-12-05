@@ -1,0 +1,50 @@
+<svg width="512" height="512" stroke="#fff" stroke-width="8" fill="#0000" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="512" height="512" stroke="#0000" fill="#000" />
+    <!-- CPU CONFIG -->
+    <path d="M 160 192 s 0 -32 32 -32 M 320 160 s 32 0 32 32 M 352 320 s 0 32 -32 32 M 192 352 s -32 0 -32 -32" />
+    <path d="M 224 224 l -32 32 l 32 32" stroke="#f00" />
+    <path d="M 272 208 l -32 96" stroke="#0f0" />
+    <path d="M 288 224 l 32 32 l -32 32" stroke="#00f" />
+
+    <!-- PINS CONFIG -->
+    <path d="M 160 192 l 0 32 m 0 -16 l -16 0 Z" stroke="#f00" />
+    <path d="M 160 224 l 0 32 m 0 -16 l -16 0 Z" stroke="#0ff" />
+    <path d="M 160 256 l 0 32 m 0 -16 l -16 0 Z" stroke="#00f" />
+    <path d="M 160 288 l 0 32 m 0 -16 l -16 0 Z" stroke="#0f0" />
+
+    <path d="M 192 160 l 32 0 m -16 0 l 0 -16 Z" stroke="#0f0" />
+    <path d="M 224 160 l 32 0 m -16 0 l 0 -16 Z" stroke="#f00" />
+    <path d="M 256 160 l 32 0 m -16 0 l 0 -16 Z" stroke="#ff0" />
+    <path d="M 288 160 l 32 0 m -16 0 l 0 -16 Z" stroke="#f0f" />
+
+    <path d="M 352 192 l 0 32 m 0 -16 l 16 0 Z" stroke="#f0f" />
+    <path d="M 352 224 l 0 32 m 0 -16 l 16 0 Z" stroke="#ff0" />
+    <path d="M 352 256 l 0 32 m 0 -16 l 16 0 Z" stroke="#f00" />
+    <path d="M 352 288 l 0 32 m 0 -16 l 16 0 Z" stroke="#00f" />
+
+    <path d="M 192 352 l 32 0 m -16 0 l 0 16 Z" stroke="#ff0" />
+    <path d="M 224 352 l 32 0 m -16 0 l 0 16 Z" stroke="#0f0" />
+    <path d="M 256 352 l 32 0 m -16 0 l 0 16 Z" stroke="#f0f" />
+    <path d="M 288 352 l 32 0 m -16 0 l 0 16 Z" stroke="#0ff" />
+
+    <!-- WIRES CONFIG -->
+    <path d="M 144 208 l -144 0" stroke="#f00" />
+    <path d="M 144 240 l -144 0" stroke="#0ff" />
+    <path d="M 144 272 l -144 0" stroke="#00f" />
+    <path d="M 144 304 l -144 0" stroke="#0f0" />
+
+    <path d="M 208 144 s 0 -16 -16 -16 l -192 0" stroke="#0f0" />
+    <path d="M 240 144 l 0 -32 s 0 -16 -16 -16 l -224 0" stroke="#f00" />
+    <path d="M 272 144 l 0 -32 s 0 -16 16 -16 l 224 0" stroke="#ff0" />
+    <path d="M 304 144 s 0 -16 16 -16 l 192 0" stroke="#f0f" />
+
+    <path d="M 368 208 l 144 0" stroke="#f0f" />
+    <path d="M 368 240 l 144 0" stroke="#ff0" />
+    <path d="M 368 272 l 144 0" stroke="#f00" />
+    <path d="M 368 304 l 144 0" stroke="#00f" />
+
+    <path d="M 208 368 s 0 16 -16 16 l -192 0" stroke="#ff0" />
+    <path d="M 240 368 l 0 32 s 0 16 -16 16 l -224 0" stroke="#0f0" />
+    <path d="M 272 368 l 0 32 s 0 16 16 16 l 224 0" stroke="#f0f" />
+    <path d="M 304 368 s 0 16 16 16 l 192 0" stroke="#0ff" />
+</svg>
