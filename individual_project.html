@@ -1,0 +1,770 @@
+<!doctype html>
+<html>
+<head>
+<title>Индивидуальный проект</title>
+
+<style>
+    table { border-collapse:collapse; border-spacing:0; empty-cells:show }
+    td, th { vertical-align:top; font-size:12pt;}
+    h1, h2, h3, h4, h5, h6 { clear:both;}
+    ol, ul { margin:0; padding:0;}
+    li { list-style: none; margin:0; padding:0;}
+    span.footnodeNumber { padding-right:1em; }
+    span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
+    span.heading_numbering { margin-right: 0.8rem; }* { margin:0;}
+    .graphic-fr1{ background-color:#ffffff; border-bottom-style:none; border-left-style:none; border-right-style:none; border-top-style:none; font-size:12pt; margin-bottom:0in; margin-left:0in; margin-right:0in; margin-top:0in; padding:0in; font-family:'Liberation Serif'; text-align:center; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; }
+    .paragraph-Footer{ font-size:12pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; }
+    .paragraph-P1{ font-size:12pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; text-align:center ! important; }
+    .paragraph-P10{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; margin-right:0.389in; text-align:left ! important; }
+    .paragraph-P11{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; margin-left:2.4583in; margin-right:0.389in; text-align:center ! important; }
+    .paragraph-P12{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; font-weight:bold; }
+    .paragraph-P13{ font-size:16pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; }
+    .paragraph-P14{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; }
+    .paragraph-P15{ font-size:12pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; margin-left:0.4917in; margin-right:0in; }
+    .paragraph-P16{ font-size:12pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; text-align:justify ! important; }
+    .paragraph-P17{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; text-align:justify ! important; }
+    .paragraph-P18{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; text-align:justify ! important; }
+    .paragraph-P19{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; text-align:justify ! important; font-weight:bold; }
+    .paragraph-P2{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; text-align:center ! important; }
+    .paragraph-P20{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; text-align:justify ! important; }
+    .paragraph-P21{ font-size:12pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; text-align:justify ! important; }
+    .paragraph-P22{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; font-weight:bold; }
+    .paragraph-P23{ font-size:12pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; margin-right:0in; text-align:justify ! important; text-indent:0.4917in; }
+    .paragraph-P24{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; margin-right:0in; text-indent:0.4917in; }
+    .paragraph-P25{ font-size:12pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; margin-left:0.398in; margin-right:0in; text-align:justify ! important; }
+    .paragraph-P26{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; margin-left:0.3957in; margin-right:0in; font-weight:bold; }
+    .paragraph-P27{ font-size:12pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; text-align:justify ! important; }
+    .paragraph-P28{ font-size:12pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; margin-right:0in; text-indent:0.4917in; }
+    .paragraph-P29{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; margin-right:0in; text-indent:0.4917in; font-weight:bold; }
+    .paragraph-P3{ font-size:16pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; text-align:center ! important; }
+    .paragraph-P30{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; margin-right:0in; text-align:justify ! important; text-indent:0.4917in; font-weight:bold; }
+    .paragraph-P31{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; margin-right:0in; text-align:justify ! important; text-indent:0.4917in; }
+    .paragraph-P32{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; text-align:justify ! important; text-decoration:underline; }
+    .paragraph-P33{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; text-align:justify ! important; }
+    .paragraph-P34{ font-size:12pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; text-align:justify ! important; }
+    .paragraph-P35{ font-size:12pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; margin-right:0in; text-align:justify ! important; text-indent:0.3957in; }
+    .paragraph-P36{ font-size:16pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; }
+    .paragraph-P37{ font-size:12pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; }
+    .paragraph-P38{ font-size:12pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; margin-left:0.25in; margin-right:0in; }
+    .paragraph-P39{ font-size:12pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; }
+    .paragraph-P4{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; text-align:center ! important; font-weight:bold; }
+    .paragraph-P40{ font-size:16pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; margin-left:0.2709in; margin-right:0in; }
+    .paragraph-P5{ font-size:20pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; text-align:center ! important; }
+    .paragraph-P6{ font-size:18pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; text-align:center ! important; font-weight:bold; }
+    .paragraph-P7{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; text-align:left ! important; }
+    .paragraph-P8{ font-size:12pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; margin-left:2.95in; margin-right:0.389in; text-align:center ! important; text-indent:0.4917in; }
+    .paragraph-P9{ font-size:14pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; margin-right:0.2917in; text-align:left ! important; }
+    .paragraph-Standard{ font-size:12pt; font-family:'Times New Roman'; writing-mode:horizontal-tb; direction:ltr; }
+    .text-Internet_20_link{ color:#0000ff; text-decoration:underline; }
+    .text-T1{ font-size:14pt; }
+    .text-T10{ font-size:14pt; }
+    .text-T11{ font-size:14pt; text-decoration:underline; }
+    .text-T12{ font-size:16pt; }
+    .text-T2{ font-size:16pt; }
+    .text-T3{ font-size:18pt; font-weight:bold; }
+    .text-T4{ font-size:18pt; }
+    .text-T5{ font-size:14pt; }
+    .text-T7{ font-size:14pt; font-weight:bold; }
+    .text-T8{ font-size:14pt; font-weight:bold; }
+    .text-T9{ font-size:14pt; font-weight:bold; }
+    .unknown-family-WW8Num5z0{ font-family:Symbol; }
+    .unknown-family-WW8Num5z1{ font-family:'Courier New'; }
+    .unknown-family-WW8Num5z2{ font-family:Wingdings; }
+    .unknown-family-WW8Num5z3{ font-family:Symbol; }
+    .unknown-family-WW8Num6z0{ font-family:Symbol; }
+    .unknown-family-WW8Num6z1{ font-family:'Courier New'; }
+    .unknown-family-WW8Num6z2{ font-family:Wingdings; }
+    .unknown-family-WW8Num6z3{ font-family:Symbol; }
+    .unknown-family-WW8Num7z0{ font-family:Symbol; }
+    .unknown-family-WW8Num7z1{ font-family:'Courier New'; }
+    .unknown-family-WW8Num7z2{ font-family:Wingdings; }
+    .unknown-family-WW8Num7z3{ font-family:Symbol; }
+</style>
+</head>
+
+<body dir="ltr" style="max-width:8.2681in;margin-top:0.7874in; margin-bottom:0.4917in; margin-left:1.1811in; margin-right:0.5902in; ">
+
+<p class="paragraph-P1"><span class="text-T1">МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ</span><span class="text-T1"/></p>
+
+<p class="paragraph-P2">ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ</p>
+
+<p class="paragraph-P3">СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА №37<span class="text-T2"/></p>
+<p class="paragraph-P4"> </p><p class="paragraph-P4"> </p><p class="paragraph-P4"> </p><p class="paragraph-P4"> </p><p class="paragraph-P4"> </p><p class="paragraph-P4"> </p><p class="paragraph-P4"> </p><p class="paragraph-P4"> </p><p class="paragraph-P4"> </p><p class="paragraph-P4"> </p>
+<p class="paragraph-P5">ИНДИВИДУАЛЬНЫЙ ПРОЕКТ</p>
+<p class="paragraph-P5"> </p>
+<p class="paragraph-P1"><span class="text-T3">Роль поэзии как части советской пропаганды и агитации</span></p>
+
+<p class="paragraph-P6">в годы Великой Отечественной войны,</p>
+
+<p class="paragraph-P6">а именно: влияние стихотворений К.М. Симонова</p>
+
+<p class="paragraph-P6">«Убей его!» и «Жди меня» <span class="text-T3"/></p>
+
+<p class="paragraph-P6">на эмоционально-психологическое</p>
+
+<p class="paragraph-P6">состояние воинов Красной Армии<span class="text-T4"/></p>
+<p class="paragraph-P6"> </p><p class="paragraph-P4"> </p><p class="paragraph-P4"> </p>
+<p class="paragraph-P7">Выполнил: Кузьминский Егор</p>
+<p class="paragraph-P7">ученик 10-го класса</p>
+<p class="paragraph-P7"> </p>
+<p class="paragraph-P9">Руководитель: Сорова Е.Е.</p>
+<p class="paragraph-P10">учитель русского языка и</p>
+<p class="paragraph-P10">литературы</p>
+<p class="paragraph-P4"> </p><p class="paragraph-P12"> </p><p class="paragraph-P4"> </p><p class="paragraph-P4"> </p><p class="paragraph-P4"> </p><p class="paragraph-P12"> </p><p class="paragraph-P12"> </p>
+<p class="paragraph-P3">Воронеж</p>
+
+<p class="paragraph-P3">2025</p>
+<p class="paragraph-P13"> </p>
+<p class="paragraph-P4">СОДЕРЖАНИЕ<span class="text-T7"/></p>
+<p class="paragraph-P4"> </p>
+<p class="paragraph-Standard"><span class="text-T7">Введение</span><span class="text-T1">…………………………………………………………………….3</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T7">ГЛАВА </span><span class="text-T8">I</span><span class="text-T7">. Роль литературы в годы</span></p>
+
+<p class="paragraph-P15"><span class="text-T9">         </span><span class="text-T7">Великой Отечественной войны</span><span class="text-T1">……………………………. 4</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-P16"><span class="text-T10">I</span><span class="text-T1">.1. Роль поэзии и поэтов военных лет…………………………………….4</span></p>
+<p class="paragraph-P17"> </p>
+<p class="paragraph-P16"><span class="text-T10">I</span><span class="text-T1">.2. Тема влияния стихотворений К.М. Симонова «Убей его!» </span></p>
+
+<p class="paragraph-P17">и «Жди меня» на эмоционально-психологическое состояние</p>
+
+<p class="paragraph-P16"><span class="text-T5"> </span><span class="text-T1">советских воинов </span><span class="text-T10">…………………………………………………………..</span><span class="text-T1">7</span></p>
+<p class="paragraph-P18"> </p>
+<p class="paragraph-Standard"><span class="text-T7">ГЛАВА </span><span class="text-T8">II</span><span class="text-T7">. ОСНОВНАЯ ЧАСТЬ</span></p>
+<p class="paragraph-P19"> </p>
+<p class="paragraph-P19">Роль поэзии как части советской пропаганды и агитации<span class="text-T7"/></p>
+
+<p class="paragraph-P19">в годы Великой Отечественной войны,<span class="text-T7"/></p>
+
+<p class="paragraph-P19">а именно: влияние стихотворений К.М. Симонова <span class="text-T8"/></p>
+
+<p class="paragraph-P19">«Убей его!» и «Жди меня» на эмоционально-психологическое</p>
+
+<p class="paragraph-P16"><span class="text-T7">состояние воинов Красной Армии</span><span class="text-T1">………………………………………8</span></p>
+<p class="paragraph-P17"> </p>
+<p class="paragraph-Standard"><span class="text-T10">II</span><span class="text-T1">.1. Основные характеристики поэзии как рода литературы……………8</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T10">II</span><span class="text-T1">.1.1. Поэтические жанры………………………………………………….9</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T10">II</span><span class="text-T1">.1.2. Патриотическое агитационное искусство. </span></p>
+
+<p class="paragraph-Standard"><span class="text-T1">Советская пропаганда годы Великой Отечественной войны……………9</span><span class="text-T1"/></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T10">II</span><span class="text-T1">.1.3. Свойство поэзии оказывать влияние на эмоции…………………..10</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T10">II</span><span class="text-T1">.2. Понятие чувства и эмоции. Базовые эмоции человека. </span></p>
+
+<p class="paragraph-Standard"><span class="text-T1">Понятие эмоционально-психологического состояния человека………..12</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T10">II</span><span class="text-T1">.2.1. Любовь и ненависть как антагонистические чувства…………….15</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T10">II</span><span class="text-T1">.3. Воздействие стихотворения «Убей его!»</span></p>
+
+<p class="paragraph-Standard"><span class="text-T1">на чувство ненависти к врагу……………………………………………..15</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T10">II</span><span class="text-T1">.3.1. Анализ стихотворения……………………………………………...16</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T10">II</span><span class="text-T1">.3.2. Взаимосвязь художественных средств и </span></p>
+
+<p class="paragraph-P14">семантико-фонетического содержания стихотворения<span class="text-T1"/></p>
+
+<p class="paragraph-Standard"><span class="text-T1">с пробуждением сильного чувства (эмоции) – ненависти………………17</span></p>
+<p class="paragraph-P14"> </p><p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T10">II</span><span class="text-T1">.3.3. Воспоминания участников Великой Отечественной войны </span></p>
+
+<p class="paragraph-P14">о влиянии стихотворения на эмоционально-психологическое<span class="text-T1"/></p>
+
+<p class="paragraph-Standard"><span class="text-T5"> </span><span class="text-T1">состояние бойцов…………………………………………………………..18</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T10">II</span><span class="text-T1">.4. Воздействие стихотворения «Жди меня» на </span></p>
+
+<p class="paragraph-Standard"><span class="text-T1">чувство любви, верности и надежды у бойцов…………………………...19</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T10">II</span><span class="text-T1">.4.1. Анализ стихотворения………………………………………………19</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T10">II</span><span class="text-T1">.4.2. Взаимосвязь художественных средств </span></p>
+
+<p class="paragraph-P14">и семантико-фонетического содержания стихотворения<span class="text-T1"/></p>
+
+<p class="paragraph-Standard"><span class="text-T1">с пробуждением сильного чувства (эмоции) – любви…………………..20</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T10">II</span><span class="text-T1">.4.3. Воспоминания участников Великой Отечественной войны</span></p>
+
+<p class="paragraph-P14">о влиянии стихотворения на эмоционально-психологическое<span class="text-T1"/></p>
+
+<p class="paragraph-Standard"><span class="text-T1">состояние бойцов…………………………………………………………..20</span></p>
+<p class="paragraph-P12"> </p>
+<p class="paragraph-Standard"><span class="text-T7">Заключение</span><span class="text-T1">………………………………………………………………..21</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T1">Список информационных источников и литературы …………………………………………………………………23</span></p>
+<p class="paragraph-P14"> </p><p class="paragraph-P14"> </p><p class="paragraph-P14"> </p><p class="paragraph-P14"> </p><p class="paragraph-P14"> </p><p class="paragraph-P14"> </p><p class="paragraph-P14"> </p><p class="paragraph-P14"> </p><p class="paragraph-P14"> </p><p class="paragraph-P14"> </p><p class="paragraph-P14"> </p><p class="paragraph-P14"> </p><p class="paragraph-P14"> </p><p class="paragraph-P14"> </p><p class="paragraph-P14"> </p><p class="paragraph-P17"> </p><p class="paragraph-P17"> </p><p class="paragraph-P17"> </p><p class="paragraph-P17"> </p><p class="paragraph-P17"> </p><p class="paragraph-P14"> </p><p class="paragraph-P14"> </p><p class="paragraph-P14"> </p><p class="paragraph-P14"> </p>
+<p class="paragraph-P12">ВВЕДЕНИЕ<span class="text-T1"/></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-P16"><span class="text-T1">        </span><span class="text-T7">Актуальность </span><span class="text-T1">выбранной мной темы проекта обусловлена прежде всего тем, что Великая Отечественная война – одно из самых тяжёлых испытаний, когда- либо выпадавших на долю русского народа. Долгие четыре года длилась война. Самоотверженность, с которой солдаты Красной армии  превозмогали все трудности и лишения войны, не сразу стала их отличительным качеством: в первые дни войны было и смятение, и отчаяние, и страх, и непонимание того, что будет с людьми, со страной. В этих условиях перед руководством СССР встала важная задача: поддержать дух советского человека, вселить в него надежду на победу, воодушевить бойцов Красной армии, создать патриотическое настроение и такое эмоционально-психологическое состояние, которое наряду с физической подготовкой и оружием, приведёт к победе над врагом. Во исполнение указанных задач 24 июня 1941 года было создано Совинформбюро – Советское информационно-пропагандистское ведомство при Совете народных комиссаров. И с первых дней войны </span><span class="text-T7">слово</span><span class="text-T1">, как и музыка, и плакатное искусство, стало источником моральной мощи советского народа. Люди, мастерски владеющие словом,: писатели, поэты, драматурги, сценаристы – стали военными корреспондентами, писавшими не только пронзительные тексты, но и были непосредственными участниками сражений.</span></p>
+
+<p class="paragraph-P17">«Словом можно убить, словом можно спасти,</p>
+
+<p class="paragraph-P16"><span class="text-T1">Словом  можно полки за собой повести». Это строчки из стихотворения Вадима Шефнера ( Вадим Сергеевич Шефнер (1915-2002) советский прозаик, поэт, журналист, фронтовой корреспондент)</span><span class="text-T1"/></p>
+
+<p class="paragraph-P16"><span class="text-T7">Цель проекта</span><span class="text-T1"> – доказать неоспоримое влияние поэзии на эмоции и чувства людей на конкретном примере военной поэзии Константина Симонова, а именно: проанализировать два его стихотворения – «Убей его!» и «Жди меня» и доказать их влияние на эмоционально-психологическое состояние бойцов Красной армии.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Для достижения  поставленной цели  мной осуществлялось решение следующих </span><span class="text-T7">задач</span><span class="text-T1">:</span></p>
+<ul><li><p class="P20" style="margin-left:0cm;"><span class="WW8Num5z0" style="display:block;float:left;min-width:0.635cm;">*</span>выявить особенности поэзии как рода литературы;<span class="text-T1"/><span class="odfLiEnd"/> </p></li><li><p class="P20" style="margin-left:0cm;"><span class="WW8Num5z0" style="display:block;float:left;min-width:0.635cm;">*</span>рассмотреть различные эмоции и чувства человека;<span class="text-T1"/><span class="odfLiEnd"/> </p></li><li><p class="P21" style="margin-left:0cm;"><span class="WW8Num5z0" style="display:block;float:left;min-width:0.635cm;">*</span><span class="text-T1">исследовать психолингвистический механизм влияния поэзии на эмоционально-психологическое состояние человека.</span><span class="odfLiEnd"/> </p></li></ul>
+<p class="paragraph-P16"><span class="text-T7">Объект исследования</span><span class="text-T1">: стихотворения К.М. Симонова «Убей его!» и «Жди меня».</span></p>
+
+<p class="paragraph-P16"><span class="text-T7">Предмет исследования</span><span class="text-T1">: влияние стихотворений К.М. Симонова «Убей его!» и «Жди меня» на эмоционально-психологическое состояние бойцов Красной армии.</span></p>
+
+<p class="paragraph-P17">При написании проекта были использованы тексты художественных произведений, научные издания и интернет-статьи, сборники исторических материалов и воспоминаний.</p>
+<p class="paragraph-P19"> </p>
+<p class="paragraph-Standard"><span class="text-T7">ГЛАВА </span><span class="text-T8">I</span><span class="text-T7">.  Роль литературы в годы Великой Отечественной войны</span></p>
+<p class="paragraph-P12"> </p>
+<p class="paragraph-P16"><span class="text-T5">      </span><span class="text-T1">        В годы Великой Отечественной войны художественное слово играло важнейшую роль наряду с другими видами искусства: живописью, графикой и кино литература служила общей цели: созданию у бойцов особого патриотического настроя. </span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Литература стала действенным оружием в борьбе с врагом. М.А. Шолохов говорил, отмечая напряжённую, поистине героическую работу писателей во время войны: «Была у них одна задача: лишь бы слово их разило врага, лишь бы оно держало под локоть нашего бойца, зажигало и не давало угаснуть в сердцах людей жгучей ненависти к врагам и любви к Родине». Основная идея произ        ведений этого времени – показать справедливый, освободительный харак        тер войны, запечатлеть массовый героизм в сражениях, раскрыть душу героев, мобилизовать духовные силы народа на борьбу с врагом.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Писатели и поэты встали в ряды защитников Отчизны. Свыше тысячи писателей были на фронтах войны, из них более двухсот погибли.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Война потребовала от литературы, особенно в первые месяцы войны, в основном, агитационно-плакатных слов: ударных, открытых, публицистических. Действительно, стихи, по завету Владимира Владимировича Маяковского, были приравнены к «штыку». Краткие, яркие корреспонденции, зарисовки сразу после боя, впечатления, наблюдения, портреты отдельных героев, листовки, боевые листки, обращения к солдатам противника, многочисленные выступления по радио, статьи, стихи, призывы, обращённые к жителям, оккупированных фашистами городов и сёл, материалы для партизанской печати, очерки, рассказы, беседы, фельетоны – разнообразие художественных форм поражает. Поэты, по свидетельству Николая Семёновича Тихонова, советского писателя, поэта и публициста, не представляли в этом разнообразии никакого исключения. Наоборот, стих получил особое «преимущество», так как «писался» быстро, не занимал много места в газете, сразу поступал на «вооружение». </span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Стихотворная публицистика – наиболее широко распространённая разновидность литературной работы в годы Великой Отечественной войны. Многие поэты посвятили ей свой талант. <br/>        </span></p>
+
+<p class="paragraph-P16"><span class="text-T8">I</span><span class="text-T7">.1. Роль поэзии и поэтов военных лет</span></p>
+<p class="paragraph-P19"> </p>
+<p class="paragraph-P17"><span class="text-T6">      </span>Говорят, что когда грохочут пушки, молчат музы. Но от первого до последнего дня войны ее умолкал голос поэтов. И пушечная канонада не смогла заглушить его. Никогда к голосу поэтов так чутко не прислушивались, как в это трудное для народа время. </p>
+
+<p class="paragraph-P16"><span class="text-T1">Поэзия Великой Отечественной войны – яркое, многообразное по спектру чувств явление. Она отличалась страстностью языка и высотой мысли.</span></p>
+
+<p class="paragraph-P17">Особое внимание поэтам уделено потому, что именно поэзия быстрее откликнулась на военные события, была на передовой, и стихов в военное время было написано больше, чем прозы, которая требует дистанцирования от события.</p>
+
+<p class="paragraph-P16"><span class="text-T1">        Роль поэзии в годы Великой Отечественной войны невозможно переоценить. В этот переломный период, когда судьба народов решалась на полях сражений, поэзия стала не только отражением борьбы и страданий, но и мощным оружием в борьбе с врагом. </span></p>
+
+<p class="paragraph-P17">Потрясения войны родили целое поколение молодых поэтов, имена которых широко известны: </p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-P12">Мусса Джалиль</p>
+
+<p class="paragraph-P12">Михаил Луконин</p>
+
+<p class="paragraph-P12">Михаил Львов</p>
+
+<p class="paragraph-P12">Юлия Друнина</p>
+
+<p class="paragraph-P12">Алексей Фатьянов</p>
+
+<p class="paragraph-P12">Сергей Орлов </p>
+
+<p class="paragraph-P12">Борис Слуцкий</p>
+
+<p class="paragraph-P12">Давид Самойлов<span class="text-T8"/></p>
+
+<p class="paragraph-P12">Евгений Винокуров </p>
+
+<p class="paragraph-P12">Александр Твардовский</p>
+
+<p class="paragraph-P12">Константин Симонов</p>
+
+<p class="paragraph-P12">Семён Гудзенко</p>
+
+<p class="paragraph-P12">Константин Ваншенкин</p>
+
+<p class="paragraph-P12">Булат Окуджава</p>
+
+<p class="paragraph-P12">Ярослав Смеляков</p>
+
+<p class="paragraph-P12">Мустам Карим</p>
+
+<p class="paragraph-P12">Ольга Берггольц</p>
+
+<p class="paragraph-P12">Алексей Сурков</p>
+
+<p class="paragraph-P12">Николай Старшинов </p>
+
+<p class="paragraph-P12">Николай Доризо</p>
+
+<p class="paragraph-P12">Николай Тихонов</p>
+
+<p class="paragraph-P12">Эдуард Асадов</p>
+
+<p class="paragraph-P12">Всеволод Багрицкий</p>
+
+<p class="paragraph-P12">Александр Артёмов</p>
+
+<p class="paragraph-P12">Александр Межиров</p>
+
+<p class="paragraph-P12">Михаил Кульчицкий  и другие.  <span class="text-T8"/></p>
+<p class="paragraph-P22"> </p>
+<p class="paragraph-P23"><span class="text-T1">Военные поэты, находившиеся на фронте и в тылу, своими строками, вдохновляли солдат на подвиги, поддерживали моральный дух населения и укрепляли веру в победу. Поэзия тех лет передавала ужас войны, боль потерь, но неизменно вселяла надежду на светлое будущее. Нельзя не упомянуть также о том, что поэзия Великой Отечественной войны была неотъемлемой частью культурного фронта. Газеты, радиопередачи, фронтовые листовки распространяли стихи, которые становились духовным оружием в борьбе с фашизмом. Стихи объединяли людей, заставляли сильнее верить в себя и в свои силы.</span></p>
+
+<p class="paragraph-P23"><span class="text-T1">Именно в годы войны поэзия продемонстрировала свою способность быть более, чем литературным жанром. Она стала живой силой, способной проникать в сердца и души людей, порождать надежду и укреплять их дух.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Наиболее музыкальные стихи превращались в песни и с бригадами артистов летели на фронт, где были незаменимы, как лекарства или оружие.</span></p>
+
+<p class="paragraph-P23"><span class="text-T1">Роль поэзии в годы Великой Отечественной войны огромна. Поэты тех лет сумели словом поддержать народ, вдохновить его на борьбу и увековечить память о тех страшных и великих днях в своих бессмертных строках.<br/>      Великая Отечественная война – одна из наиболее распространенных тем русской лирики. Многие советские поэты видели военные ужасы своими глазами, участвовали в сражениях, вели агитационную работу в тылу. Не все поэты-фронтовики дожили до победы, но оставили потомкам пронзительные и глубокомысленные произведения.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">        Каждый из перечисленных мной поэтов оставил свой уникальный, незабываемый след в советской литературе. Их произведения и сегодня тревожат читателей до глубины души, рисуют перед нами страшные картины тех лет, нечеловеческие испытания, выпавшие на долю советских людей, и порождают те же сильные эмоции и чувства, что и тогда – в годы Великой Отечественной войны.</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-P16"><span class="text-T8">I</span><span class="text-T7">.2. Тема влияния стихотворений К.М. Симонова «Убей его!» и «Жди меня» на эмоционально-психологическое состояние советских воинов </span></p>
+<p class="paragraph-P19"> </p>
+<p class="paragraph-P23"><span class="text-T1">Среди славных имён поэтов-фронтовиков я выбрал имя  Константина Михайловича Симонова для работы над этим проектом. </span></p>
+
+<p class="paragraph-P23"><span class="text-T1">Итак, я остановился на литературе как основе проекта, потому что литература, музыка, художественное (плакатное) искусство ярко вспыхнули именно в тяжёлое время Великой Отечественной войны. Невозможно представить то время без величайших художественных произведений крупных и малых форм. Я решил посвятить  исследование поэзии времён Великой Отечественной войны на примере только двух стихотворений Симонова, а именно: «Убей его!» и «Жди меня». Они порождают два антагонистических чувства – ненависть и любовь, которые в тяжелейших, нечеловеческих условиях войны сосуществуют и оказывают сильное влияние на эмоционально-психологическое состояние, помогая человеку выстоять и преодолеть все невзгоды. </span></p>
+
+<p class="paragraph-P23"><span class="text-T1">В ходе работы над проектом я обратился также к психолингвистике – области лингвистики, изучающей язык как феномен психики. Психолингвистика исследует психологические процессы, вовлечённые в усвоение, производство, понимание и использование языка. Это дисциплина, которая находится на стыке психологии и лингвистики. Изучает взаимоотношение языка, мышления и сознания.</span></p>
+<p class="paragraph-P24"> </p><p class="paragraph-P12"> </p>
+<p class="paragraph-Standard"><span class="text-T7">ГЛАВА </span><span class="text-T8">II</span><span class="text-T7">. ОСНОВНАЯ ЧАСТЬ</span></p>
+<p class="paragraph-P22"> </p>
+<p class="paragraph-P25"><span class="text-T7">Роль поэзии как части советской пропаганды и агитации в годы Великой Отечественной войны, а именно: влияние стихотворений К.М. Симонова «Убей его!» и «Жди меня» на эмоционально-психологическое состояние воинов Красной Армии</span></p>
+<p class="paragraph-P26"> </p>
+<p class="paragraph-Standard"><span class="text-T8">II</span><span class="text-T7">.1. Основные характеристики поэзии как рода литературы</span></p>
+<p class="paragraph-P12"> </p>
+<p class="paragraph-P16"><span class="text-T1">        Поэзия наряду с прозой  - один из двух основных способов организации художественной речи.</span></p>
+
+<p class="paragraph-P27"><span class="text-T1">Поэзия, или  лирика, - это род литературы, в котором внимание автора направлено на изображение внутреннего мира героя, его переживаний. Лирика часто не бывает сюжетной, в ней важным является не физическое действие, а движение души. Переживания, чувства, эмоции становятся главным событием в лирической поэзии. Каждый род литературы обладает неповторимыми качествами, для лирики это:</span></p>
+
+<p class="paragraph-P17">* ориентация не на действие, а на изображение чувств, эмоций, внутреннего мира человека;</p>
+
+<p class="paragraph-P17">* отсутствие рассказчика;</p>
+
+<p class="paragraph-P16"><span class="text-T1">* наличие особого персонажа – лирического героя, чьи переживания часто близки автору;</span><span class="text-T1"/></p>
+
+<p class="paragraph-P17">* монологическая форма изложения;</p>
+
+<p class="paragraph-P17">* особое оформление текста – наличие ритма, рифмы, стихотворного размера.</p>
+<p class="paragraph-P17"><span> Поэзия – это особая организация художественной речи. Лирическая форма отражения действительности передаёт субъективное отношение личности к миру.</span>
+
+</p>
+<p class="paragraph-P16"><span class="text-T1">Несмотря на множество определений, поэзия не имеет чёткого определения, однако, у стихов есть несколько типичных характеристик. Одна из них -  метафора. Метафора сильнее, чем сравнение, которое только уподобляет одну вещь другой. Стихотворения являются основным источником новых метафор. Ещё одной характеристикой поэзии является краткость. Большинство лирических стихотворений короткие и содержат меньше слов, чем рассказы.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Два характерных аспекта просодии стихотворений  - это метр и рифма. Другой характеристикой поэтической просодии является существование традиционных норм. Некоторые формы зависят от повторения слов или целых или целых строк. Повторение также является основным компонентом музыкальной формы в симфониях, сонатах и других видах сочинений. Стихотворения различаются по относительной важности идей и слов. Типичные стихотворения воплощают метафоры. Они лаконичны, имеют размер, ритм и рифму. Эти особенности помогают вызывать эмоции.</span></p>
+<p class="paragraph-P14"> </p><p class="paragraph-P12"> </p>
+<p class="paragraph-P12"/>
+
+<p class="paragraph-Standard"><span class="text-T8">II</span><span class="text-T7">.1.1. Поэтические жанры </span></p>
+<p class="paragraph-P12"> </p>
+<p class="paragraph-P16"><span class="text-T1">        Для лирики свойственно самораскрытие автора, демонстрация его внутреннего мира через эмоции лирического героя. Большая часть лирических произведений имеет стихотворную форму и небольшой объём.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">К поэтическим жанрам относятся:</span></p>
+
+<p class="paragraph-P17">* ода – хвалебная песня;<span class="text-T1"/></p>
+
+<p class="paragraph-P17">* гимн – торжественная песня в честь героев и важных событий;</p>
+
+<p class="paragraph-P17">* элегия – стихотворение, проникнутое грустью;<span class="text-T1"/></p>
+
+<p class="paragraph-P16"><span class="text-T1">* сонет – произведение со строгой структурой, состоящей из 14 строк;</span></p>
+
+<p class="paragraph-P17">* послание – поэтическое письмо кому-либо;</p>
+
+<p class="paragraph-P16"><span class="text-T1">* романс – чувственное стихотворение, исполняемое под музыкальный аккомпанемент;</span><span class="text-T1"/></p>
+
+<p class="paragraph-P17">* эпитафия – стихотворное изречение, сочиняемое на случай чьей-либо смерти и используемое в качестве надгробной надписи;<span class="text-T1"/></p>
+
+<p class="paragraph-P17">* эпиграмма – короткое сатирическое стихотворение.</p>
+<p class="paragraph-P17"> </p>
+<p class="paragraph-Standard"><span class="text-T8">II</span><span class="text-T7">.1.2. Патриотическое агитационное искусство. </span></p>
+
+<p class="paragraph-P28"><span class="text-T7">Советская пропаганда годы Великой Отечественной войны</span></p>
+<p class="paragraph-P29"> </p>
+<p class="paragraph-P16"><span class="text-T1">        Добавлю в этот перечень жанр патриотической агитационной лирики, так как анализируемое мной стихотворение «Убей его!» относится к этому жанру. Второе стихотворение, анализируемое мной в проекте, - «Жди меня» -относится к жанру посланий.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Жанр патриотической агитационной лирики, как видно из названия, включает в себя два понятия, а именно: агитацию и патриотизм.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Агитационное искусство – одна из форм идейно-политического и эстетического воздействия на массы. Агитационная литература – совокупность художественных произведений, которые, воздействуя на чувства, воображение и волю людей, побуждают к определённым поступкам, действиям. Агитационную литературу ставят обычно рядом с пропагандистской. Главная цель – формировать и поддерживать патриотические настроения, боевой дух советского народа.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">В период Великой Отечественной войны советское правительство старалось эффективно использовать пропагандистские рычаги, чтобы мобилизовать вооружённые силы и население для ведения тяжёлой войны, а также воздействовать на  вражескую армию. Популярными средствами пропаганды стали плакаты, листовки и радиопередачи.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Советскую пропаганду времён Второй мировой называли «третьим фронтом». Она подавляла врагов, воодушевляла бойцов Красной армии и восхваляла союзников. Политическая и литературная пропаганда была необходима для того, чтобы мобилизовать новые силы, вовлекая население, противодействовать пропаганде врага на оккупированных территориях, стимулировать патриотизм среди партизан и воздействовать методами </span><span class="text-T1">пропаганды на армию врага. Популярными средствами пропаганды стали знаменитые советские плакаты и листовки, радиопередачи. Пропаганда поднимала боевой дух советских людей, заставляла сражаться их мужественнее.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Решение об организации пропаганды было принято в первые дни Великой Отечественной войны. Формированием образов, задействованных в пропаганде, занимались Управление пропаганды и агитации ЦК ВКП (Б) и Отделение РККА по работе с войсками противника. Уже 24 июня 1941 года Совинформбюро стало ответственным за пропаганду на радио и в печати. Помимо военно-политической пропаганды была также и литературная. В группу, которую создали специально для ведения пропаганды и освещения боевой жизни советских солдат были включены  такие известные писатели, как Н.М. Симонов, Н.А. Тихонов, А.Н.Толстой, А.А. Фадеев, К.А. Федин, М.А. Шолохов, И.Г. Эренбург и многие другие. Ответственность писателей была огромна – они должны были показывать качества советской армии, воспитывать патриотизм, изобличать немецкие войска в жестокости и бесчеловечности. </span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Илья Эренбург так обозначил задачу пропаганды: «Мы должны неустанно видеть перед собой облик гитлеровца: эта мишень, в которую нужно стрелять без промаху, это – олицетворение ненавистного нам. Наш долг – разжигать ненависть к злу и укреплять жажду прекрасного, доброго, справедливого». Слово «фашист» моментально стало синонимом нечеловеческого монстра, фашистов рисовали бездушными насильниками, холодными убийцами, варварами и насильниками.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Стихи как сильнейшее средство пропаганды были похожи на бойцов, самоотверженно бросавшихся в самое пекло сражений. </span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Во время войны поэзия стала голосом Родины-матери, которая взывала к сынам с плакатов. Встаёт перед глазами лаконичный и совершенный плакат «Родина-мать зовёт», созданный советским грузинским живописцем графиком Ираклием Тоидзе 22-23 июня 1941 года. Сила воздействия «Родины-матери» была необыкновенной. Плакат вдохновлял людей так же, как песня «Священная война». Такие шедевры создаются в искреннем порыве быть неотделимым от судьбы своей Родины. </span><span class="text-T1"/></p>
+
+<p class="paragraph-P23"><span class="text-T1">Итак, пропаганда является мощным способом влияния на сознание людей. В годы войны пропаганда оказала огромное мобилизующее, организующее, воспитательное, психологическое воздействие на формирование патриотических, высоконравственных чувств советского народа. Именно они вселяли надежду и уверенность в победе над фашистами, укрепляли веру и любовь к Родине. </span><span class="text-T7">        </span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T8">II</span><span class="text-T7">.1.3.  Свойство поэзии оказывать влияние на эмоции</span></p>
+<p class="paragraph-P30"> </p>
+<p class="paragraph-P31">Слово есть орудие человеческого общения, средство для выражения мысли.</p>
+
+<p class="paragraph-P23"><span class="text-T1">С тех пор,  как люди изучают поэзию, они признают, что она вызывает  эмоции. Поэзия находится между повествовательным искусством и музыкой: она может иметь семантическое содержание, как рассказы и пьесы, но у неё есть ритмы и метры – </span><span class="text-T11">просодия</span><span class="text-T1">, как у музыки. (</span><span class="text-T11">Просодия</span><span class="text-T1">, от др.-греч. «ударение», «припев» – система фонетических средств, дополнительная по отношению к основной артикуляции звуков и не выделяющаяся при членении речи на фонемы. Синонимы: поэтический ритм, ритмический рисунок. Метр – мера стиха, его структурная единица, определённый порядок чередования ударных и безударных слогов в строке. Стопа – это единица стихотворного метра, группа слогов. Ритм – это равномерное чередование ударных и безударных слогов. Рифма – созвучие в окончании двух или нескольких слов, похожие по звучанию окончания строк в стихотворении.)        </span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Поэзия вызывает эмоции. Она это делает посредством трёх видов моделирования. Каждый из них может вызывать эмоции, которые являются коммуникациями как внутри мозга человека, так и между людьми. Во-первых, модели семантического содержания стихотворения могут вызывать эмоции, как и модели, которые встречаются в изображениях всех видов, от романов до восприятий. Во-вторых, метрическое моделирование просодических сигналов, таких, как метр, ритм и рифма, приводят к определённым эмоциональным состояниям. В-третьих, моделирование людьми самих себя позволяет им знать, что они вовлечены в стихотворение, и в результате может возникнуть эстетическая эмоция. Три вида моделирования предсказывают определённые виды эмоций, например, просодические сигналы могут вызывать базовые эмоции счастья, грусти, гнева, тревоги. Эмпирические данные подтверждают теорию, связанную с описаниями поэтических эмоций. </span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Просодия относится к трём основным характеристикам поэзии: метру, ритму и рифме.</span><span class="text-T1"/></p>
+
+<p class="paragraph-P16"><span class="text-T1">Музыка поэзии в её просодических особенностях, таких как метр, ритм и рифма, может вызывать определённые свободно плавающие эмоции без семантического содержания. Однако при надлежащем содержании соответствующая просодия усиливает эмоции. И когда содержание вызывает базовую эмоцию, а просодия – другую эмоцию, результатом должны быть смешанные чувства. Ваше внимание поглощено словами и образами. Сам поэт сообщает о схожих переживаниях при написании стихотворений. Базовой эмоцией может быть любовь, ненависть, гнев, беспокойство,  скука или отвращение в разной степени, которые могут вызывать соматические реакции, непроизвольное поведение и произвольные действия.<br/>Поэзия оказывает психологическое воздействие на чувства человека, используя метафоры в качестве механизма психологического воздействуя. Поэзия, основанная на любви ко всему живому, влияет на эмоциональное состояние и способствует развитию его эмоциональной сферы. </span><span class="text-T1"/></p>
+
+<p class="paragraph-P16"><span class="text-T1">Эмоциональное выражение и эстетические качества определяют сущность поэзии, делая её уникальной и захватывающей формой литературного </span><span class="text-T1">искусства. Благодаря своей способности выражать эмоции с глубоким воздействием поэзия всегда затрагивает самые потаённые уголки души человека.</span><span class="text-T1"/></p>
+
+<p class="paragraph-P17">Стихотворения, с их тщательно подобранными словами и мелодичностью, обладают уникальной силой передачи чувств и мыслей.<span class="text-T1"/></p>
+
+<p class="paragraph-P16"><span class="text-T1">В русской поэзии принято силлабо-тоническое стихосложение, основанное на равномерном чередовании ударных и безударных слогов, разработанных М.В. Ломоносовым и В.К. Тредиаковским. Последовательность групп ударных и безударных гласных слогов образует стихотворный размер. В такой системе выделяют двусложные размеры – хорей и ямб – и трёхсложные – дактиль, амфибрахий и анапест.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">        Поэзия несовместима с нейтральностью и беспристрастностью тона, широко применяющегося в эпических повествованиях. Язык лирического произведения наполнен эмоциями, которые становятся организующим и доминирующим началом. Эмоциональность даёт о себе знать и в подборе слов, и в синтаксических конструкциях, и в многочисленных тропах, а главное, в фонетико-ритмическом построении текста. На первый план в поэзии выдвигаются семантико-фонетические эффекты. Многое роднит поэзию с музыкой.</span></p>
+<p class="paragraph-P12"> </p>
+<p class="paragraph-Standard"><span class="text-T8">II</span><span class="text-T7">.2. Понятие чувства и эмоции. Базовые эмоции человека. Понятие эмоционально-психологического состояния человека</span></p>
+<p class="paragraph-P12"> </p>
+<p class="paragraph-P16"><span class="text-T7">        </span><span class="text-T11">Чувство</span><span class="text-T1"> – это эмоциональный процесс человека, отражающий субъективное оценочное отношение к реальным или абстрактным объектам.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Чувствами называют процессы внутренней регуляции деятельности , отражающие смысл, который имеют для него определённые объекты, иначе говоря, отношение субъекта к ним. Чувства отражают не объективную, а субъективную оценку объекта.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">        </span><span class="text-T11">Эмоция</span><span class="text-T1"> – психический процесс средней продолжительности, отражающий субъективное оценочное отношение к существующим или возможным ситуациям и объективному миру. </span></p>
+
+<p class="paragraph-P16"><span class="text-T1">В современной науке существует пять направлений в определении связи эмоций и чувств:</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">* представление чувств и эмоций тождественными;</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">* отношение чувств к одному из видов эмоций;</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">* рассмотрение чувства как родового понятия разнообразных эмоций;</span></p>
+
+<p class="paragraph-P17">* представление о чувствах и эмоциях как о принципиально различных процессах;<span class="text-T1"/></p>
+
+<p class="paragraph-P16"><span class="text-T1">* представление об эмоциях как о проявлениях, предшествующих следующей ступени эволюции: чувствам, которые присущи  существам, начиная с определённого уровня сознания.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">        Психологи выдвинули несколько теорий, которые позволяют классифицировать и объяснить разные типы эмоций.</span></p>
+
+<p class="paragraph-P32">Какие эмоции считаются базовыми<span class="text-T11"/></p>
+
+<p class="paragraph-P16"><span class="text-T1">В 1970-е годы американский психолог Пол Экман выделил шесть базовых эмоций, которые одинаково переживают представители разных культур. Это счастье, грусть (печаль), отвращение, страх, удивление и злость (гнев).</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Другой американский психолог – Роберт Плутчик – выдвинул свою теорию и создал на её основе «колесо эмоций», которое работает по принципу цветового круга. В нём восемь базовых эмоций: восторг, восхищение, ужас, изумление, горе, отвращение, гнев и настороженность. Они могут комбинироваться друг с другом, образуя  различные чувства, так же, как цвета, могут смешиваться, образуя различные оттенки. Согласно идеям Плутчика, базовые эмоции – это своеобразные кирпичики, из которых строятся более сложные, иногда противоречивые чувства. Например, такие базовые эмоции, как радость и доверие, могут объединиться в такое сложное чувство, как любовь.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Базовые эмоции, описанные Полом Экманом,- лишь один из возможных способов классифицировать разные типы эмоций. Изначально он полагал, что эти шесть эмоций универсальны  для людей по всему миру. Позже он пересмотрел свой подход и расширил список основных эмоций, добавив в него гордость, стыд, смущение, презрение, вину, волнение и другие. При этом Экман отмечал, что, в отличие от базовых, не все из них обязательно выражаются с помощью мимики.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Как и в случае со многими другими психологическими концепциями, далеко не все теоретики соглашаются в вопросах типологии эмоций и в том, какие из них можно считать базовыми. Например, одни полагают, что к ним относятся всего две или три. Другие уверены, что эмоции подчиняются некой иерархии. То есть первичные эмоции, такие как любовь, радость, удивление, злость или грусть, можно разделить на вторичные. Тогда любовь, например, будет состоять из таких вторичных эмоций, как привязанность и тоска. Вторичные эмоции, в свою очередь, разбиваются на третичные, и тогда компонентами привязанности будут симпатия, забота, сострадание и нежность. Другими словами, эмоции – это не состояния, возникающие изолированно друг от друга. Наоборот, существуют целые градиенты эмоций, которые глубоко взаимосвязаны. Изучая их природу, исследователи больше узнают о том, как эмоции влияют на активность мозга, поведение и настроение.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">        Когнитивные описания эмоций делятся на два основных семейства. Одно семейство восходит к Иммануилу Канту и рассматривает эмоции как основание на таких измерениях, как степень возбуждения и удовольствия-неудовольствия. Другое семейство восходит к Дарвину и рассматривает каждую базовую эмоцию как имеющую отдельную функцию, выражение и поведение, а также эволюционное преимущество. Коммуникативная теория относится к этому дарвинскому семейству. Согласно ей эмоции – это сигналы, различаются по своим целям. Эмоции являются местом встречи субъективных чувств, соматических реакций и телесных действий.  Они различаются по степени. У людей они основаны на базовых эмоциях: счастье, грусть, гнев, тревога. Их можно испытывать с полным осознанием </span><span class="text-T1">их причины или объекта. Действительно, некоторые базовые эмоции, такие как любовь, ненависть, отвращение не могут быть испытаны,  кроме как по отношению к известным объектам. У людей также есть сложные эмоции. Их эмоциональная основа – это базовая эмоция, но она интегрирована в семантическое содержание. Типичными примерами сложных эмоций являются гордость – счастье в себе; сочувствие – печаль в чужой ситуации; ревность – гнев или беспокойство по отношению к нарушителю в сексуальных или социальных отношениях.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Эмоции имеют древнее эволюционное происхождение, и поэтому симуляции в примитивных метрических моделях могут вызывать их. Они могут быть базовыми и свободно плавающими. Вот почему музыка и поэтическая просодия, имеющие семантическое содержание, могут быть движущимися: читатели испытывают основные и сложные эмоции главного героя и других персонажей стихотворения.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Основные функции эмоций:</span></p>
+<ul><li><p class="P33" style="margin-left:0cm;"><span class="WW8Num7z0" style="display:block;float:left;min-width:0.635cm;">*</span>сигнальная (человек ориентируется на эмоции в поведении)<span class="text-T1"/><span class="odfLiEnd"/> </p></li><li><p class="P33" style="margin-left:0cm;"><span class="WW8Num7z0" style="display:block;float:left;min-width:0.635cm;">*</span>оценочная (формируется отношение)<span class="odfLiEnd"/> </p></li><li><p class="P33" style="margin-left:0cm;"><span class="WW8Num7z0" style="display:block;float:left;min-width:0.635cm;">*</span>регуляторная (влияет на мотивы).<span class="text-T1"/><span class="odfLiEnd"/> </p></li></ul>
+<p class="paragraph-P16"><span class="text-T1">Эмоции имеют ряд свойств, а именно: качество, содержание, направленность, длительность, выраженность, источник возникновения и другие.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">По качественному признаку бывают положительные, отрицательные, двойственные (амбивалентные) и неопределённые эмоции. По содержанию бывают высшие и низшие.</span></p>
+<p class="paragraph-P17"> </p>
+<p class="paragraph-P16"><span class="text-T1">        Термин </span><span class="text-T11">«психологическое состояние»</span><span class="text-T1"> относится к умственному или эмоциональному состоянию человека, которое можно вывести из моделей психофизиологической активности, таких как мозговые волны физиологические реакции. Наиболее изученными являются: общее состояние, например, внимание, проявляющееся на уровне активной сосредоточенности или рассеянности; </span><span class="text-T11">эмоциональные </span><span class="text-T1">состояния, или настроения (жизнерадостное, восторженное, печальное, грустное, гневное и т.д.); творческое состояние личности, или вдохновение.</span></p>
+
+<p class="paragraph-P16"><span class="text-T5"> </span><span class="text-T11">Эмоциональные состояния</span><span class="text-T1"> – психические состояния, которые возникают в процессе жизнедеятельности субъекта и определяют не только уровень информационно-энергетического обмена (как функционального состояния), но и направленность поведения. Основные эмоциональные состояния, выделяемые в психологии: 1) радость (удовлетворение, веселье); 2) грусть (апатия, печаль, депрессия); 3) гнев (агрессия, озлобление); 4) страх (тревога, испуг); 5) удивление (любопытство); 6) отвращение (презрение, брезгливость).</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">        Возвращаясь к понятию «эмоция», я разделяю точку зрения психологов, утверждающих, что чувство возникает на основе эмоции. Я пришёл к такому заключению, ознакомившись с этимологией слов «эмоция» и «чувство». Эмоция (от лат. е</span><span class="text-T10">moveo</span><span class="text-T1"> – волную, возбуждаю) представляет </span><span class="text-T1">собой первую реакцию индивида на услышанное, прочитанное или увиденное в виде порыва, действия. Эмоции кратковременны и изменчивы.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Слово «чувство» происходит из старославянского ( чувьство от слова чути), чувство более длительное, чем эмоция.  Это сложное и относительно устойчивое переживание.</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T8">II</span><span class="text-T7">.2.1. Любовь и ненависть как антагонистические чувства         </span></p>
+<p class="paragraph-P14"><span> </span>
+</p>
+<p class="paragraph-P23"><span class="text-T1">Исходя из вышеизложенного, я буду называть «любовь» и «ненависть» чувствами.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Любовь – это чувство, которое проявляется в заботе, уважении, поддержке и понимании друг с другом. Психологи во все времена сходились на том, что любовь – это одно из самых сильных человеческих чувств. Любовь – набор эмоций, характеризующихся близостью, страстью, преданностью. Она включает в себя заботу, близость, защиту, влечение, привязанность и доверие.</span><span class="text-T1"/></p>
+
+<p class="paragraph-P16"><span class="text-T1">Ненависть – интенсивное, отрицательно окрашенное деструктивное чувство, отражающее отвращение и враждебность к объекту ненависти. Есть и другие толкования ненависти. Ненависть широко описывается как эмоция, но также как чувство. Некоторые учёные считают, что ненависть – это крайняя версия гнева или неприязни; некоторые описывают ненависть как смесь эмоций, таких как гнев, презрение и отвращение; а другие считают ненависть отдельным и уникальным чувством.  Любовь и ненависть – антагонистические чувства, которые испытывает человек. В связи с темой проекта я уточню, что понятие любви ограничиваю любовью мужчины к женщине, а  понятие ненависти – ненавистью к врагу.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">«Ненависть к врагу-захватчику – священное и самое гуманное чувство. Но оно рождается с такой болью сердца и мукой души, что не дай Бог испытать это никому второй раз…» (Павел Иванович Батов – 1897-1985, дважды Герой Советского Союза, Генерал армии)</span></p>
+<p class="paragraph-P12"><span> <span class="text-T7"/></span>
+
+</p>
+<p class="paragraph-Standard"><span class="text-T8">II</span><span class="text-T7">.3. Воздействие стихотворения «Убей его!» на чувство ненависти к врагу</span></p>
+<p class="paragraph-P17"><span> </span>
+</p>
+<p class="paragraph-P23"><span class="text-T11">Константин Михайлович Симонов</span><span class="text-T1"> (1915-1979) - советский         прозаик, поэт, драматург, киносценарист, журналист и военный корреспондент, Герой Социалистического труда, Лауреат Ленинской премии (1974) и  шести Сталинских премий (1942, 1943, 1946, 1947, 1949, 1950), участник боёв на Халкин-Голе (1939) и в Великой Отечественной войне.</span></p>
+<p class="paragraph-P17"> </p>
+<p class="paragraph-P16"><span class="text-T1">К.М. Симонов – без сомнения, Эверест советской литературы времён войны. Почти всю войну он пробыл военкором газеты «Красная Звезда», что придаёт его произведениям безусловную достоверность.</span><span class="text-T1"/></p>
+
+<p class="paragraph-P16"><span class="text-T1">Стихотворение «Убей меня!» написано в июле 1942 года.  Опубликовано в газете «Красная Звезда» 18 июля – на следующий день после начала </span><span class="text-T1">Сталинградской битвы. Оно было создано  как отклик на события, происходившие на фронте. Это стихотворение является одним из самых известных в военной лирике Симонова. Оно показывает решительный и бескомпромиссный подход автора к борьбе с фашизмом. Стихотворение появилось в тяжёлое время отступления Советской армии, панических настроений, страха практически одновременно с судьбоносным сталинским Приказом № 227 «Ни шагу назад!». Их можно считать психологическим переломом в настроениях армии и народа.</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T8">II.3.1. </span><span class="text-T7">Анализ стихотворения</span></p>
+<p class="paragraph-P12"> </p>
+<p>Если дорог тебе твой дом,</p>
+<p>Где ты русским выкормлен был,</p>
+<p>Под бревенчатым потолком,</p>
+<p>Где ты, в люльке качаясь, плыл;</p>
+<p>Если дороги в доме том</p>
+<p>Тебе стены, печь и углы,</p>
+<p>Дедом, прадедом и отцом</p>
+<p>В нем исхоженные полы;</p>
+<p class="paragraph-P12"> </p>
+<p>Если мил тебе бедный сад</p>
+<p>С майским цветом, с жужжаньем пчёл</p>
+<p>И под липой сто лет назад</p>
+<p>В землю вкопанный дедом стол;</p>
+<p>Если ты не хочешь, чтоб пол</p>
+<p>В твоем доме немец топтал,</p>
+<p>Чтоб он сел за дедовский стол</p>
+<p>И деревья в саду сломал…</p>
+<p class="paragraph-P12"> </p>
+<p>Если мать тебе дорога —</p>
+<p>Тебя выкормившая грудь,</p>
+<p>Где давно уже нет молока,</p>
+<p>Только можно щекой прильнуть;</p>
+<p>Если вынести нету сил,</p>
+<p>Чтоб немец, к ней постоем став,</p>
+<p>По щекам морщинистым бил,</p>
+<p>Косы на руку намотав;</p>
+<p>Чтобы те же руки ее,</p>
+<p>Что несли тебя в колыбель,</p>
+<p>Мыли гаду его белье</p>
+<p>И стелили ему постель…</p>
+<p class="paragraph-P12"> </p>
+<p>Если ты отца не забыл,</p>
+<p>Что качал тебя на руках,</p>
+<p>Что хорошим солдатом был</p>
+<p>И пропал в карпатских снегах,</p>
+<p>Что погиб за Волгу, за Дон,</p>
+<p>За отчизны твоей судьбу;</p>
+<p>Если ты не хочешь, чтоб он</p>
+<p>Перевертывался в гробу,</p>
+<p>Чтоб солдатский портрет в крестах</p>
+<p>Взял немец и на пол сорвал</p>
+<p>И у матери на глазах</p>
+<p>На лицо ему наступал…</p>
+<p class="paragraph-P12"> </p>
+<p>Если ты не хочешь отдать</p>
+<p>Немцу, с чёрным его ружьём,</p>
+<p>Дом, где жил ты, жену и мать,</p>
+<p>Все, что родиной мы зовем,—</p>
+<p>Знай: никто ее не спасет,</p>
+<p>Если ты ее не спасешь;</p>
+<p>Знай: никто его не убьет,</p>
+<p>Если ты его не убьешь.</p>
+<p>И пока его не убил,</p>
+<p>Ты молчи о своей любви,</p>
+<p>Край, где рос ты, и дом, где жил,</p>
+<p>Своей родиной не зови.</p>
+<p>Пусть немца убил твой брат,</p>
+<p>Пусть немца убил сосед,—</p>
+<p>Это брат и сосед твой мстят,</p>
+<p>А тебе оправданья нет.</p>
+<p>За чужой спиной не сидят,</p>
+<p>Из чужой винтовки не мстят.</p>
+<p>Раз немца убил твой брат,—</p>
+<p>Это он, а не ты солдат.</p>
+<p class="paragraph-P12"> </p>
+<p>Так убей же немца, чтоб он,</p>
+<p>А не ты на земле лежал,</p>
+<p>Не в твоем дому чтобы стон,</p>
+<p>А в его по мертвым стоял.</p>
+<p>Так хотел он, его вина,—</p>
+<p>Пусть горит его дом, а не твой,</p>
+<p>И пускай не твоя жена,</p>
+<p>А его пусть будет вдовой.</p>
+<p>Пусть исплачется не твоя,</p>
+<p>А его родившая мать,</p>
+<p>Не твоя, а его семья</p>
+<p>Понапрасну пусть будет ждать.</p>
+<p class="paragraph-P12"> </p>
+<p>Так убей же хоть одного!</p>
+<p>Так убей же его скорей!</p>
+<p>Сколько раз увидишь его,</p>
+<p>Столько раз его и убей!</p>
+<p class="paragraph-P12"> </p>
+<p class="paragraph-P23"><span class="text-T1">Стихотворение адресовано солдатам Красной армии  и советскому народу, поднимая их дух и призывая к борьбе с врагом.</span></p>
+
+<p class="paragraph-P16"><span class="text-T11">Жанр</span><span class="text-T1">: патриотическая агитационная лирика. Стихотворение призывает к действию, поддерживает патриотические настроения и мотивирует к борьбе с врагом. Жанр предполагает мощное эмоциональное воздействие на читателя или слушателя. Поэт использовал этот жанр, чтобы создать эмоциональный и прямолинейный призыв к действию. Жанр предполагает использование сильных, выразительных образов и агрессивной риторики.</span></p>
+
+<p class="paragraph-P16"><span class="text-T11">Тема</span><span class="text-T1">: призыв к борьбе с врагом и защита Родины. Лирический герой обращается к каждому,  призывая не оставаться равнодушным и не полагаться на других, а  самому встать на защиту дома, семьи,  своей родины. Стихотворение посвящено  патриотизму  и необходимости сопротивления фашистам.</span></p>
+
+<p class="paragraph-P16"><span class="text-T11">Композиция стихотворения</span><span class="text-T1">: стихотворение можно разделить на две части:</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">* первая часть: эмоциональное обращение к читателю с перечислением того, что может быть  утрачено, если враг захватит родину – дом, мать, отец, любимая. Автор детализирует возможные утраты, создавая образ того, что нужно защитить;</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">* вторая часть: призыв к действию и личной ответственности, которую несёт каждый человек. Автор подчёркивает, что если не убить врага, то всё дорогое  будет уничтожено. Композиция линейна и развивается от описания угрозы к призыву действовать.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">*</span><span class="text-T11"> Размер и рифма стихотворения</span><span class="text-T1">: стихотворение написано четырёхстопным ямбом, что придаёт тексту чёткость и ритмичность, соответствующую агитационному характеру произведения. </span></p>
+
+<p class="paragraph-P17">Рифмовка перекрёстная (АВАВ):<span class="text-T1"/></p>
+
+<p class="paragraph-P17">«Если дорог тебе твой дом,</p>
+
+<p class="paragraph-P17">Где ты русским выкормлен был,<span class="text-T1"/></p>
+
+<p class="paragraph-P17">Под бревенчатым потолком,<span class="text-T1"/></p>
+
+<p class="paragraph-P16"><span class="text-T1">Где ты, в люльке качаясь, плыл…»</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">* </span><span class="text-T11">Идея (основная мысль)</span><span class="text-T1"> стихотворения: призыв к каждому солдату и гражданину защитить свою родину и уничтожить врага. Симонов подчёркивает, что каждый несёт ответственность за будущее своей страны и должен занять активную позицию в борьбе с фашизмом.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">* </span><span class="text-T11">Смысл названия:</span><span class="text-T1"> название «Убей его!» является прямым и категоричным призывом к действию. Оно не оставляет сомнений в том, что от каждого бойца требуется активное участие в боевых действиях и готовность защитить свою родину и близких. Название усиливает агрессивную риторику стихотворения и подчёркивает решительность автора.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">* </span><span class="text-T11">Лейтмотив</span><span class="text-T1">: защита родины, личная ответственность, ненависть к врагу.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">* </span><span class="text-T11">Лирический герой</span><span class="text-T1">: патриот, готовый защищать свою родину и призывающий других к этому. Он раскрывается через прямую речь и обращение к читателю, создавая образ человека, который берёт на себя ответственность и требует того же от других.</span></p>
+
+<p class="paragraph-P16"><span class="text-T11">* Пафос</span><span class="text-T1">: патриотический. (</span><span class="text-T7">Пафос</span><span class="text-T1"> ( от греч. «страсть», «воодушевление») это эмоциональный тон или настроение произведения, а также чувства, которые автор пытается вызвать, описывая события или поступки героев. В риторике пафосом, или патетикой, обозначают приём обращения к </span><span class="text-T7">эмоциям</span><span class="text-T1">. Пафос используется для того, чтобы вызвать у читателя различные эмоции, такие как сочувствие, печаль, радость, гнев и др. Он обозначает страстное, эмоционально насыщенное воздействие произведения на читателя, это приём для вызова эмоционального отклика у аудитории, то есть пафос – это обращение к эмоциям. </span></p>
+
+<p class="paragraph-P16"><span class="text-T11">* Опорные слова</span><span class="text-T1">: дом, мать, отец, убей. Эти слова подчёркивают связь лирического героя с родиной, родными и необходимость их защиты.</span></p>
+<p class="paragraph-P17"> </p>
+<p class="paragraph-Standard"><span class="text-T8">II</span><span class="text-T7">.3.2. Взаимосвязь художественных средств и семантико-фонетического содержания стихотворения с пробуждением сильного чувства (эмоции) – ненависти</span></p>
+<p class="paragraph-P12"> </p>
+<p class="paragraph-P16"><span class="text-T7">        </span><span class="text-T1">В стихотворении царит гневное и решительное настроение. Оно сохраняется на протяжении всего произведения. Стихотворение проникнуто </span><span class="text-T7">чувством ненависти</span><span class="text-T1"> к врагу и чувством долга перед Родиной.  Настроение выражается через резкие обращения и мощные образы, которые автор использует для того, чтобы вызвать у читателя или слушателя ощущение угрозы и необходимость немедленного действия. Картины, которые видятся: разрушенный дом, опустевший сад, плачущая мать – эти образы создают мощное эмоциональное напряжение и мотивацию уничтожать врага.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Автор использует повторы, метафоры, эпитеты и риторические вопросы, чтобы  усилить эмоциональный эффект. Симонов мастерски передаёт чувство гнева и решимости, мотивируя каждого человека яростно защищать своих близких. Образы, использованные в стихотворении, создают яркую и страшную картину возможных утрат, порождая чувство ненависти. Настроение от прочтения или прослушивания стихотворения – гневное и воинственное.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Музыка стихотворения – быстрая и ритмичная, что создаёт ощущение напряжённости и решительности. Лексика эмоционально насыщена и выражает злость, гнев, ярость – выразительные компоненты ненависти. </span></p>
+
+<p class="paragraph-P16"><span class="text-T1">На мой взгляд, гнев – это эмоция, злость – это чувство, возникающее на основе гнева, а ярость – крайне сильное чувство тоже на основе гнева. Все перечисленные реакции порождают в итоге ненависть – длительное и глубокое чувство. Его испытывают бойцы к фашистско-немецким захватчикам, стихотворение «Убей его!» заставляло наших защитников сильнее чувствовать ненависть к врагу и без сожаления убивать его.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Поэтический синтаксис прост, с короткими предложениями и восклицаниями. Текст выразительный и динамичный. Использование риторических вопросов усиливает эффект прямого обращения и вовлечённости читателя.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Звукопись активно использует твёрдость согласных, создавая ощущение резкости и напряжённости. Чередование твёрдых и звонких звуков агрессивность и воинственность стихотворения.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Ритм завораживает, образы сжимаются вокруг читателя, становятся всё болезненней, и слово «убей» повторяется всё чаще, образуя кумулятивный эффект. Можно сколько угодно комментировать это стихотворение, но его мистика остаётся непостижимой. Она и сегодня действует – при чтении пробирает дрожь – настоящее проклятие. Недаром после войны Симонов запретил печатать это стихотворение под первым названием, заменив его на первую строку «Если дорог тебе твой дом…» Немец превратился в фашиста, но сути изменить не могло.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Критики отмечали мощное эмоциональное воздействие стихотворения и его решительный призыв к действию. Симонов сумел создать произведение, которое мотивировало солдат и поддерживало боевой дух во время боёв.</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T8">II</span><span class="text-T7">.3.3. Воспоминания участников Великой Отечественной войны о влиянии стихотворения на эмоционально-психологическое состояние бойцов</span></p>
+<p class="paragraph-P12"> </p>
+<p class="paragraph-P16"><span class="text-T1">        Давид Иосифович Ортенберг (1904-1998), советский писатель, журналист, генерал-майор, редактор газеты «Красная звезда», вспоминал: «Мы ждали материалы от Симонова. Вот, наконец, доставили пакет. На конверте надпись: «Д.И. Ортенбергу. Лично. Срочно. От Симонова». Раскрыл пакет, а там оказался не очерк - стихи         «Убей его!». Не буду объяснять, как нужен был этот прямой публицистический призыв в тяжёлые дни нашего отступления». Дальше Ортенберг цитирует одного писателя, бывшего на войне политруком миномётной роты, что тот читал стихотворение Симонова перед боем. (Михаил Николаевич Алексеев (1918-2007) – советский писатель, прозаик и журналист, военный корреспондент)</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Поэт Михаил Львов: «В 1944 году, на Сандомирском плацдарме, за Вислой, говорил один танкист о стихотворении «Убей его!»: «Я бы присвоил этому стихотворению звание Героя Советского Союза. Оно убило гитлеровцев больше, чем самый прославленный снайпер…» (Михаил Давыдович Львов (1917-1988) – советский поэт и переводчик. Участник Великой Отечественной войны)</span></p>
+
+<p class="paragraph-P14"/>
+
+<p class="paragraph-Standard"><span class="text-T8">II</span><span class="text-T7">.4. Воздействие стихотворения «Жди меня» на чувство любви, верности и надежды у бойцов</span></p>
+<p class="paragraph-P12"> </p>
+<p class="paragraph-P16"><span class="text-T1">        Стихотворение написано в самом начале войны, в июле-августе 1941 года. Стихотворение было напечатано не сразу, Константин Симонов показал его редактору «Красной звезды» Давиду Ортенбергу и получил комментарий: «Эти стихи не для военной газеты. Нечего растравлять душу солдата…». Но в 1942 году стихотворение было опубликовано в газете «Правда». Критики не раз отзывались о стихотворении неблагоприятно, но самым главным для поэта было то, это стихотворение принимали на фронте. Стихотворение начали переписывать, а позже оно стало одним из символов Великой Отечественной войны, его называли народным.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">«Жди меня, и я вернусь…» посвящено любимой женщине, позже ставшей женой поэта, - Валентине Серовой, известной актрисе театра и кино. Вот так послание одной женщине стало достоянием всей страны, оно обращено ко всем ждавшим от лица всех тех, кто находится вдали от них. Это стихотворение помогало солдатам справляться с трудностями военного времени и дарило им надежду на возвращение к любимым.</span></p>
+<p class="paragraph-P17"> </p>
+<p>Жди меня, и я вернусь.</p>
+<p>Только очень жди,</p>
+<p>Жди, когда наводят грусть</p>
+<p>Желтые дожди,</p>
+<p>Жди, когда снега метут,</p>
+<p>Жди, когда жара,</p>
+<p>Жди, когда других не ждут,</p>
+<p>Позабыв вчера.</p>
+<p>Жди, когда из дальних мест</p>
+<p>Писем не придет,</p>
+<p>Жди, когда уж надоест</p>
+<p>Всем, кто вместе ждет.</p>
+<p class="paragraph-P17"> </p>
+<p>Жди меня, и я вернусь,</p>
+<p>Не желай добра</p>
+<p>Всем, кто знает наизусть,</p>
+<p>Что забыть пора.</p>
+<p>Пусть поверят сын и мать</p>
+<p>В то, что нет меня,</p>
+<p>Пусть друзья устанут ждать,</p>
+<p>Сядут у огня,</p>
+<p>Выпьют горькое вино</p>
+<p>На помин души...</p>
+<p>Жди. И с ними заодно</p>
+<p>Выпить не спеши.</p>
+<p class="paragraph-P17"> </p>
+<p>Жди меня, и я вернусь,</p>
+<p>Всем смертям назло.</p>
+<p>Кто не ждал меня, тот пусть</p>
+<p>Скажет: - Повезло.</p>
+<p>Не понять, не ждавшим им,</p>
+<p>Как среди огня</p>
+<p>Ожиданием своим</p>
+<p>Ты спасла меня.</p>
+<p>Как я выжил, будем знать</p>
+<p>Только мы с тобой,-</p>
+<p>Просто ты умела ждать,</p>
+<p>Как никто другой.</p>
+<p class="paragraph-P17"> </p>
+<p class="paragraph-Standard"><span class="text-T8">II</span><span class="text-T7">.4.1. Анализ стихотворения</span></p>
+<p class="paragraph-P12"> </p>
+<p class="paragraph-P16"><span class="text-T1">* </span><span class="text-T11">Жанр</span><span class="text-T1"> – любовное послание, так как адресовано лирическим героем своей возлюбленной, конкретной женщине. Такой жанр был использован именно потому, что изначально это стихотворение было написано только для одного человека.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">* </span><span class="text-T11">Тема</span><span class="text-T1"> – </span><span class="text-T7">любовь</span><span class="text-T1">, которая помогает выдержать все испытания войны. Произведение посвящено любви женщины – такой сильной, что становится сильнее смерти. Её терпеливое ожидание бережёт бойца в бою, это апофеоз светлого и прекрасного чувства.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">* </span><span class="text-T11">Композиция</span><span class="text-T1"> – трёхчастная. Рефреном через каждую часть проходят слова «Жди меня, и я вернусь…». В первой части поэт говорит о том, что время неуклонно идёт, а значит, многие потеряли надежду на то, что их любимые вернутся с войны.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Во второй части усиливается отчаяние и безнадёжность, ведь самые близкие люди потеряли надежду на возвращение мужа, сына, отца.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Третья часть противопоставляется двум первым, в ней говорится о том, что сильная вера будет вознаграждена.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">*</span><span class="text-T11"> Стихотворный размер</span><span class="text-T1"> – хорей. Трёх- и четырёхстопный хорей, использованный для создания однообразного ритма, помогает подчеркнуть мысль автора.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">* </span><span class="text-T11">Рифмовка</span><span class="text-T1"> – перекрёстная, АВАВ. Перекрёстная рифмовка облегчает восприятие поэтических строк.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">* </span><span class="text-T11">Пафос</span><span class="text-T1"> – лирический, наполнен разными переживаниями. Безнадёжность сменяется надеждой, безысходность преодолевается к концу стихотворения и сменяется верой: « Всем смертям назло».</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">* </span><span class="text-T11">Лирический герой</span><span class="text-T1"> – выражен с помощью форм личного местоимения «я», личных форм глаголов.</span></p>
+<p class="paragraph-P14"> </p>
+<p class="paragraph-Standard"><span class="text-T8">II</span><span class="text-T7">.4.2. Взаимосвязь художественных средств и семантико-фонетического содержания стихотворения с пробуждением сильного чувства (эмоции) – любви</span></p>
+<p class="paragraph-P12"> </p>
+<p class="paragraph-P23"><span class="text-T1">Для этого стихотворения поэт использует достаточно скупой набор классических художественных средств:</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">* эпитеты – «жёлтые дожди», «дальние места», «горькое вино»;</span></p>
+
+<p class="paragraph-P34"><span class="text-T1">* метафоры – «снега метут», «ожиданием своим ты спасла меня»;</span></p>
+
+<p class="paragraph-P17">* олицетворение – «писем не придёт»;</p>
+
+<p class="paragraph-P17">* сравнение – «как никто другой».<span class="text-T1"/></p>
+
+<p class="paragraph-P16"><span class="text-T1">При этом они просто подчёркивают основную мысль, а главную роль в создании тона и настроения играет анафора – слово «жди», которое постоянно повторяется в строфе. Это повторение придаёт произведению сходство с молитвой. Повторяющиеся рефреном слова «жди меня» стали клятвой верности для воинов, заклинанием спасения от смерти, обещанием выжить и вернуться. Поэт нашёл простые слова, которые каждый солдат мог считать своими: это была просьба к жене, к невесте, к любимой, к той, что ждёт дома и вглядывается тревожными ночами в темноту. Слова шли от сердца, и вырезанное из газеты стихотворение многие хранили в кармане гимнастёрки.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Кажущаяся простота стихотворения сродни гениальности. Узнаваемость  поэтических средств только располагает к стихотворению, делает его родным и близким, как бы возвращая к знакомой с детства классике.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Смысловой и композиционный стержень стихотворения – повтор. Глагол «жди» встречая 11 раз, утверждая идею произведения. Этому же служат и однокоренные словоформы: «ждавшим», «ожиданием», «ждать», «ждёт», «ждут». Подобная концентрация повторов уподобляет лирический текст заклинанию, молитве. И, конечно, самое главное, что насыщает ауру «Жди меня», - это авторский пафос. И именно этот страстный авторский пафос оказался родственным сердцам миллионов. Стихотворение стало частью народной души. Ведь «Жди меня» пронизано  гениальным поэтическим сопереживанием общего, коллективного, буквально разлитого в воздухе – и на фронте, и в тылу – настроения тревожности, трагической отлучённости от мирной жизни. А ещё – надежды и любви.</span></p>
+<p class="paragraph-P12"> </p>
+<p class="paragraph-Standard"><span class="text-T8">II</span><span class="text-T7">.4.3. Воспоминания участников Великой Отечественной войны о влиянии стихотворения на эмоционально-психологическое состояние бойцов</span></p>
+<p class="paragraph-P12"> </p>
+<p class="paragraph-P23"><span class="text-T1">«Жди меня» - простые, казалось бы, слова вселяли такую безграничную надежду, что, как рассказывал сам автор, «вся армия таскала в левых карманах гимнастёрок газетные вырезки со стихотворением, и когда писали письма домой, то вкладывали эти вырезки». Такие произведения вселяли надежду, приободряли солдат.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Очевидцы утверждают, что «Жди меня» выполняло на фронте также и психотерапевтическую функцию. Работающие во фронтовых госпиталях медики вспоминали, что стихотворение Симонова декламировали вслух и раненые солдаты, чтобы превозмочь  невыносимую боль, и врачи в минуты сильнейшего перенапряжения.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">И кажется совсем уж невероятным, но имеет фактическое подтверждение то, что «Жди меня» приобрело статус некой сакральности. Например, среди солдат существовало поверье, что стихотворение обладает силой оберега. Будто бы отводит пулю. Для этого его следует обязательно переписать от руки и носить у самого сердца.</span></p>
+
+<p class="paragraph-Standard"><span class="text-T1">         </span></p>
+
+<p class="paragraph-P12">ЗАКЛЮЧЕНИЕ<span class="text-T7"/></p>
+<p class="paragraph-P12"> </p>
+<p class="paragraph-P35"><span class="text-T1">Состояние солдат на войне не только от физической подготовки и оружия, но и от их эмоционально-психологического состояния. Война – это не только физическое противостояние, но и психологическое испытание. </span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Состояние солдата на войне – это совокупность его физического, эмоционального и психологического состояния. Эмоциональное состояние связано с переживаниями, страхами и стрессом. Психологическое состояние – восприятие войны, моральные ценности и убеждения солдата.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Ключевым для морально-психологического состояния войск в условиях войны является формирование определённых ценностных установок (любовь к Родине, патриотические чувства, прививаемые ещё в мирное дело), убеждений в правоте и силе своей армии. В конкретных боевых условиях решающее значение могут приобретать такие психологические аспекты, как отношение к врагу, к своим товарищам по оружию, к опасностям и тяготам войны. </span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Итак, любое эмоционально-психологическое состояние, настроение создаётся с помощью слов. Сила слова заключается в том, что оно универсально: словом можно поднять настроение, причинить боль, вселить надежду, образно говоря, словом можно убить или  оживить. Слова могут стать источником вдохновения, помощи и поддержки, а также способом выражения эмоций и чувств.</span><span class="text-T1"/></p>
+
+<p class="paragraph-P16"><span class="text-T1">Слово не только есть орудие человеческого общения, средство для выражения мысли, но слова являются мощным психологическим оружием. Приведу определение слова. Это основная номинативная и когнитивная единица языка, служащая для именования и сообщения о предметах, признаках, процессах и отношениях. Слово представляет собой структурно-семантическую единицу языка, обладающую формой (планом выражения) и значением (планом содержания). Владеть силой  слова – значит, получать </span><span class="text-T1">доступ к умам и сердцам людей, заряжать их своей энергией, доносить свои убеждения и ценности. Наибольшее значение слово приобрело в словесном искусстве – художественной литературе. В литературном произведении слово выступает в тесном единстве его образной и понятийной сторон.</span></p>
+
+<p class="paragraph-P17">Я уже рассмотрел роль художественного слова во время Великой Отечественной войны, подчеркнув особую роль поэзии.</p>
+
+<p class="paragraph-P16"><span class="text-T1">«Пожалуй, никогда за время существования советской поэзии не было написано столько лирических стихов, как за годы войны». А.А. Сурков (Алексей Александрович Сурков (1899-1983) – русский советский поэт, журналист, военный корреспондент. Батальонный комиссар (1941). Герой Социалистического Труда (1969). Лауреат двух Сталинских премий (1946, 1951)</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Заметки Симонова в газете «Красная звезда», его стихотворения, в значительной степени повлияли на моральный дух бойцов Красной Армии, ошеломлённых бесславным началом войны. Особое место в лирике поэта было отведено любви, которая подверглась великим испытаниям во время войны. Очень личное стихотворение «Жди меня» стало талисманом для тех, кто воевал, и тех, кто ждал в тылу.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Поэзия Симонова военного времени почти мистическая. «Жди меня» - настоящая молитва, обращённая к земной женщине. А «Убей его!»  - чрезвычайно редкий тип стихотворения – проклятие.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Подводя итог моему скромному исследованию малой толики произведений К.М. Симонова, могу сказать, что он всегда был верен главной теме своего творчества. Тема эта – мужество и героическое служение Родине. Военная лирика сделала имя Симонова знаменитым. Стихи Симонова помогали выжить. Четыре года войны определили все сорок лет литературной деятельности К.М. Симонова. Для поколения, к которому принадлежит Симонов, центральным событием, определившим его судьбу, мировоззрение, нравственный облик, характер и интенсивность эмоций, была Великая Отечественная война. Лирика К.М. Симонова была голосом того поколения, проза – его самосознанием, отражением его исторической роли.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Чем дальше от нас отстоит во времени победа наших предков в величайшей из войн, тем важнее для нас понимание тех далёких и страшных событий, важно понять и то, что дало нашим воинам силы выстоять и победить там, где победа казалась невозможной, каким было воздействие художественного слова на эмоционально-психологическое состояние солдат. Это понимание помогает нам осознать, что наши предки дорого заплатили за нашу жизнь, свободу и благополучие.</span></p>
+
+<p class="paragraph-P16"><span class="text-T1">Мы, живущие сейчас, в год празднования 80-летия Великой Победы Советского народа в Великой Отечественной войне, не должны забывать ужасы войны, разлуку, страдания и смерть миллионов. Это было бы преступлением перед павшими, преступлением перед будущим, мы должны помнить о войне, о героизме и мужестве советского народа. Мы должны помнить и беречь память о тех, кто сражался за наши жизни, за наше будущее.</span></p>
+
+<p class="paragraph-P17"/>
+<p class="paragraph-P17"> </p>
+<p class="paragraph-P1"><span class="text-T2">Список информационных источников и литературы</span></p>
+<p class="paragraph-P17"> </p>
+<ul>
+<li>1. Гойхман О.Я., Надеина Т.М. Основы речевой коммуникации. Учебник. М., 1997</li>
+<li>2. Гринберг И.Л. Творчество Николая Тихонова. М., 1972</li>
+<li>3. Изард К.Э. Эмоции человека. М.: Изд. МГУ, 1980</li>
+<li>4. Ильин Е.П. Эмоции и чувства//серия: Мастера психологии/ СПб: Питер, 2008</li>
+<li>5. Леонтьев А.А. Основы теории речевой деятельности. М., 1974</li>
+<li>6. Леонтьев А.Н. Основы психолингвистики. М., 1997</li>
+<li>7. Леонтьев А.Н. Потребности, мотивы, эмоции. М., 1971</li>
+<li>8. Симонов К.М. Эренбург И.Я.  Летопись мужества. М., 1978</li>
+<li>9. Тихонов Н.С. Огненный год. М., 1942</li>
+<li>10. Финк Л.А. Константин Симонов. Творческий путь. Л.,1980</li>
+<li>11. Фортунатов Г.А. Чувства//Общая психология. Учебное пособие. М., 1970</li>
+<li>12. Поэтический язык как способ общения искусством. Вопросы литературы. 1973. № 6</li>
+<li>13. Стихи о Великой Отечественной войне. «Идёт война народная». Изд-во Детская литература, 2015</li>
+<li>14. Стихотворения о Великой Отечественной войне. Изд-во Эксмо, М., 2024</li>
+<li>15. Стихи поэтов-фронтовиков. «Жди меня». Изд-во АСТ, М., 2024</li>
+<li>16. <a href="https://sterrninia.ru">https://sterrninia.ru</a>  Стернин И.А., Рудакова А.В., Виноградова О.Е. Психолингвистическое значение слова.</li>
+<li>17. <a href="https://doi.org/10.1016/j.actpsy.2022">https://doi.org/10.1016/j.actpsy.2022</a> Как поэзия вызывает эмоции. Филипп Джонсон-Леру, Кит Оутли.</li>
+<li>18. <a href="https://www.culture.ru">https://www.culture.ru</a> Шефнер В.С. Стихотворение «Слова»</li>
+</ul>
+</html>
